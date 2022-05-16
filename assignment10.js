@@ -1,10 +1,13 @@
-let n1 = 1, n2 = 1, n3;
-
-console.log('Fibonacci Series:');
-
-for (let i = 1; i <= 100; i++) {
-    console.log(n1);
-    n3 = n1 + n2;
-    n1 = n2;
-    n2 = n3;
+function fibonacci{
+    var n1=1;
+    var n2=1;
+    var count=0;
+    while(count<100){
+        var n3=n1+n2;
+        console.log("number is"+n3);
+        document.write(n3+",");
+        n1=n2;
+        n2=n3;
+        count++;
+    }
 }
